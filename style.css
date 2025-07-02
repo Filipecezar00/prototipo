@@ -1,0 +1,84 @@
+body{
+    font-family:"Comic Sans MS", cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background:#f0f8ff;
+}
+
+h1{
+    background-color: #4caf50;
+    color:white;
+    padding:10px;
+}
+
+#game-container{
+    position:relative;
+    margin:20px auto;
+    width:800px;
+    height:500px;
+    background-color: #c8e6c9;
+    border: 3px solid #388e3c;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+
+#player{
+    width:40px;
+    height:40px;
+    background:red;
+    position: absolute;
+    left:20px;
+    top:450px;
+    border-radius: 50%;
+    z-index:2;
+
+    }
+
+.item{
+    width:30px;
+    height:30px;
+    position: absolute;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.papelao{
+    background-color: #a1887f;
+}
+
+.garrafa{
+    background-color: #2196f3;
+}
+.tampinha{
+    background-color: #ffeb3b;
+
+}
+
+#inventario{
+    margin-top: 20px;
+    background: #e0f2f1;
+    padding: 15px;
+    border: 2px solid #009688;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#montar-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #009688;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#mensagem{
+    color:green;
+    margin-top:10px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Cidade dos Brinquedos</h1>
+  <div id="game-container">
+<div id="player"></div>
+
+
+<div class="item papelao" data-type="papelao" style="left:150px; top: 100px;"></div>
+<div class="item papelao" data-type="papelao" style="left:150px; top: 100px;"></div>
+<div class="item garrafa" data-type="garrafa" style="left:300px; top: 150px;"></div>
+<div class="item tampinha" data-type="tampinha" style="left:200px; top: 350px;"></div>
+  </div>
+  <div id="inventario">
+    <h3>Inventário</h3>
+    <p>Papelão: <span id="qtd-papelao">0</span></p>
+    <p>Garrafa:  <span id="qtd-garrafa">0</span></p>
+    <p>Tampinha:<span id="qtd-tampinha">0</span></p>
+     <button id="montar-btn">Montar Carrinho </button>
+     <p id="mensagem"></p>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
