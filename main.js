@@ -1,5 +1,5 @@
 const player = document.getElementById("player")
-const itens = document.querySelectorAll(".item")
+const items = document.querySelectorAll(".item")
 const inventario={
     papelao:0,
     garrafa:0,
@@ -7,7 +7,7 @@ const inventario={
 };
 
 function atualizarInventario(){
-    document.getElementById('"qtd-papelao').textContent = inventario.papelao;
+    document.getElementById("qtd-papelao").textContent = inventario.papelao;
     document.getElementById("qtd-garrafa").textContent = inventario.garrafa;
     document.getElementById("qtd-tampinha").textContent = inventario.tampinha;
 }
@@ -17,9 +17,9 @@ function checkCollision(item){
     const playerRect = player.getBoundingClientRect()
     return ! (
         playerRect.right < itemRect.left ||
-        playerRect.left < itemRect.right ||
+        playerRect.left > itemRect.right ||
         playerRect.bottom < itemRect.top ||
-        playerRect.top < itemRect.bottom
+        playerRect.top > itemRect.bottom
     )
 
 }
@@ -47,6 +47,7 @@ document.addEventListener("keydown",(e)=>{
           case "ArrowRight":
           case "d":
             pos.x +=speed 
+            break 
             case "ArrowUp":
             case "w": 
             pos.y -=speed
